@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI SaaS Next.js App
+
+This project is a landing page for an AI SaaS product built with Next.js. It features a modern design, responsive layout, and optimized performance.
+
+## Features
+
+* **Modern UI:**  Clean and professional design built with Tailwind CSS and Framer Motion.
+* **Responsive Design:** Adapts seamlessly to different screen sizes.
+* **Optimized Performance:**  Leverages Next.js features like `next/font` for optimal font loading and rendering.
+* **Component-Based Architecture:**  Organized into reusable components for maintainability and scalability.
+* **Easy Deployment:** Ready for deployment on Vercel.
+
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/coder-nian/ai-saas-nextjs
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The page auto-updates as you edit the files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+The project follows a standard Next.js structure:
 
-To learn more about Next.js, take a look at the following resources:
+* `app/page.tsx`: Defines the main landing page layout, importing and rendering various sections.
+* `components/`: Contains reusable components. (Note: This folder isn't explicitly shown in the provided files but is implied by the structure.)
+* `sections/`: Contains larger sections of the landing page (e.g., Header, Hero, Pricing).  These likely reside within the `components` directory or a similar structure.
+* `public/`: Contains static assets.  (Inferring its existence due to the project setup)
+* `styles/`: Contains global styles (e.g. `globals.css`). (Again, implied but not directly shown in the code sample)
+* `layout.tsx`: Defines the overall layout of the app including font imports and application of Tailwind styles.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+* **Next.js:**  A React framework for building server-side rendered and static websites.
+* **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+* **Framer Motion:**  A production-ready motion library for React.
+* **DM Sans (Google Font):** A clean and modern font for optimal readability.
+* **clsx:** A utility for conditionally joining classNames.
+* **tailwind-merge:** Utility for merging Tailwind CSS classes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+You can customize the landing page by modifying the components and styles.  Key files to modify include:
+
+* `sections/*`: Edit the content and styling of individual sections.
+* `globals.css`:  Update global styles.
+* `layout.tsx`:  Change the overall layout and font.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
